@@ -1,0 +1,26 @@
+<!-- Copyright start
+  Copyright (C) 2008 - 2023 Fortinet Inc.
+  All rights reserved.
+  FORTINET CONFIDENTIAL & FORTINET PROPRIETARY SOURCE CODE
+  Copyright end -->
+<div class="widget-container chart">
+    <div class="display-flex-space-between margin-chart">
+        <div class="padding-right-0 padding-left-0"
+            data-ng-class="(page === 'dashboard' || page === 'reporting') ? 'widget-dashboard-title-width' : 'widget-title-width'">
+            <h5 class="margin-top-0 margin-bottom-0 text-overflow ng-binding">{{ config.title }}</h5>
+        </div>
+        <div class="padding-right-0 padding-left-0"
+            data-ng-class="(page === 'dashboard' || page === 'reporting') ? 'widget-dashboard-actions-width' : 'widget-actions-width'">
+            <span class="fa btn widget-action-icon btn-sm pull-right" data-ng-click="collapsed = !collapsed"
+                data-ng-class="{'fa-caret-up': !collapsed, 'fa-caret-down': collapsed}"></span>
+        </div>
+    </div>
+    <div data-ng-hide="collapsed">
+        <div class="clearfix"></div>
+        <div class="text-center" data-ng-if="loadProcessing">
+            <cs-spinner class="state-wait" data-show-background="true"></cs-spinner>
+            <div class="font-size-14">Fetching Indicator Details ...</div>
+        </div>
+        <div data-ng-if="!loadProcessing" data-cs-iframe="renderingURL.url"></div>
+    </div>
+</div>
