@@ -10,8 +10,8 @@
             "View Panel"
         ],
         "snapshots": [
-            "https:\/\/repo.fortisoar.fortinet.com\/widgets\/vtAugment-1.0.0\/images\/record_cta_block_view.png",
-            "https:\/\/repo.fortisoar.fortinet.com\/widgets\/vtAugment-1.0.0\/images\/record_cta_block_edit.png"
+            "https:\/\/repo.fortisoar.fortinet.com\/widgets\/vtAugment-1.0.0\/images\/vtAugment_view.png",
+            "https:\/\/repo.fortisoar.fortinet.com\/widgets\/vtAugment-1.0.0\/images\/vtAugment_edit.png"
         ],
         "certified": "No",
         "help_online": "https:\/\/github.com\/fortinet-fortisoar\/widget-virus-total-augment\/blob\/release\/1.0.0\/README.md",
@@ -21,6 +21,5 @@
         ],
         "standalone": true,
         "windowClass": "Full Width"
-    },
-    "development": true
+    }
 }
