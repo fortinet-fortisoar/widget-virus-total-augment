@@ -1,0 +1,25 @@
+{
+    "name": "vtAugment",
+    "title": "VirusTotal Augment",
+    "subTitle": "VT Augment",
+    "version": "1.0.0",
+    "published_date": "1682490318",
+    "metadata": {
+        "description": "VirusTotal Augment allows you to enrich the most common threat observables: files/hashes, domains, IPs and URLs and display all details",
+        "pages": [
+            "View Panel"
+        ],
+        "snapshots": [
+            "https:\/\/repo.fortisoar.fortinet.com\/widgets\/vtAugment-1.0.0\/images\/vtAugment_view.png",
+            "https:\/\/repo.fortisoar.fortinet.com\/widgets\/vtAugment-1.0.0\/images\/vtAugment_edit.png"
+        ],
+        "certified": "No",
+        "help_online": "https:\/\/github.com\/fortinet-fortisoar\/widget-virus-total-augment\/blob\/release\/1.0.0\/README.md",
+        "publisher": "Fortinet",
+        "compatibility": [
+            "7.4.0"
+        ],
+        "standalone": true,
+        "windowClass": "Full Width"
+    }
+}
