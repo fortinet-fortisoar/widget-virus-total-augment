@@ -1,7 +1,7 @@
 {
     "name": "vtAugment",
     "title": "VirusTotal Augment",
-    "subTitle": "VT Augment",
+    "subTitle": "VirusTotal Augment allows you to enrich the most common threat observables: files/hashes, domains, IPs and URLs and display all details",
     "version": "1.0.0",
     "published_date": "1682490318",
     "metadata": {

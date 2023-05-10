@@ -15,7 +15,6 @@
     $scope.loadProcessing = true;
     $scope.healthCheck = true;
     $scope.connectorConfig = true;
-    //var vtConfig = null;
     $scope.module = $state.params.module; //Get module name
     $scope.moduleUUID = $state.params.id; //Get module uuid
     var entity = new Entity($scope.module); //Create module entity
@@ -23,6 +22,7 @@
       $relationships: true
     }).then(function () {
       $scope.indicatorValue = entity.fields[$scope.config.rows[0].columns[0].fields[0].name].value;
+      _getConnectorConfig();
     }); //Get module fields values
 
 
@@ -102,7 +102,6 @@
         audit_info: null
       };
       $resource(API.INTEGRATIONS + 'execute/?format=json').save(requestParams, function (urlResp) {
-        console.log(urlResp);
         $scope.loadProcessing = false;
         $scope.renderingURL = urlResp.data.data.url;
       }, function (error) {
@@ -110,7 +109,5 @@
         console.log(error);
       });
     }
-    _getConnectorConfig();
-
   }
 })();
